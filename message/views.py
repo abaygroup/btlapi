@@ -24,7 +24,7 @@ class MainView(APIView):
         """.format(full_name, email, phone, fruits, weight)
 
         email_from = settings.EMAIL_HOST_USER
-        recipient_list = ['Btlfood2@gmail.com',]
+        recipient_list = ['mukhagaliaryn@gmail.com',]
 
         send_mail( subject, message, email_from, recipient_list )
         return Response({"message" : "Success"})

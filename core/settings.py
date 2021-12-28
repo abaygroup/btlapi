@@ -72,6 +72,10 @@ TEMPLATES = [
     },
 ]
 
+
+# Django CORS Headers
+CORS_ORIGIN_ALLOW_ALL = True
+
 WSGI_APPLICATION = 'core.wsgi.application'
 
 

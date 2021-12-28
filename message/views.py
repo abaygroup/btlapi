@@ -14,9 +14,7 @@ class MainView(APIView):
 
         subject = 'Новая заказ'
         message = """
-            Если у Вас на экране появилась ошибка "Fatal error: Call to undefined function: mail()", 
-            это значит, что либо PHP собран без поддержки функции mail, либо она запрещена настройками 
-            сервера. 
+            Вам пришел заказ от нового пользователя. Подробная информация заказчика представлена ниже:
 
             Имя: {}
             Email адрес: {}
@@ -26,7 +24,7 @@ class MainView(APIView):
         """.format(full_name, email, phone, fruits, weight)
 
         email_from = settings.EMAIL_HOST_USER
-        recipient_list = ['mukhagaliaryn@gmail.com',]
+        recipient_list = ['Btlfood2@gmail.com',]
 
         send_mail( subject, message, email_from, recipient_list )
         return Response({"message" : "Success"})

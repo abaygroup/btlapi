@@ -1,0 +1,8 @@
+appdirs==1.4.4
+cffi==1.15.0
+cryptography==35.0.0
+distlib==0.3.2
+filelock==3.0.12
+pycparser==2.21
+six==1.16.0
+virtualenv==20.4.7
